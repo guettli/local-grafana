@@ -1,14 +1,19 @@
 # Local Loki/Grafana Setup
 
-This local Loki/Grafana setup is for ad-hoc log analyzing.
+This local Loki/Grafana setup is for **ad-hoc log analyzing**.
 
-Based on the docker-compose files of [Loki Docs](https://grafana.com/docs/loki/latest/getting-started/#obtain-the-test-environment).
+With "ad-hoc" I mean that you start Promtail/Loki/Grafan on your local machine, and
+add the logs which you want to analyze today by hand.
+
+It is not suited for continuous log handling.
+
+It is based on the docker-compose files of [Loki Docs](https://grafana.com/docs/loki/latest/getting-started/#obtain-the-test-environment).
 
 ## Start Grafana, Loki and Promtail
 
 Grafana: Web-GUI for querying the logs.
 
-Loki: log aggregation system (without GUI)
+Loki: Log aggregation system (without GUI)
 
 Promtail: Agent which ships the contents of local logs to a Loki instance.
 
@@ -28,8 +33,9 @@ Keep this terminal, and open a second terminal for the next steps.
 
 Above docker-compose mounts the ./logs directory and imports the containing logs.
 
+Now we add logs to the ./logs directory. 
 
-Now we add logs to the ./logs directory. I have an application in a Kubernetes cluster which
+I have an application in a Kubernetes cluster which
 emits logs in long json-lines. But AFAIK other log formats should work, too. I use `kubectl` -
 use your prefered way.
 
@@ -63,7 +69,7 @@ Hint2: Too large time-ranges (like "this year") might cause an error:
 ## How to delete all logs?
 
 ```
-# stop docker-compose
+# stop docker-compose (ctrl-c)
 
 sudo rm -rf .data/minio
 
