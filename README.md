@@ -110,3 +110,11 @@ Trying to parse lines like this with eyes is .... (choose your own words here pl
 Additionally, there is one warning "Error while parsing some of the logs". That's because some lines were not json-lines,
 but traditional log lines.
 
+# Related
+
+* [Thomas WOL: Working out Loud](https://github.com/guettli/wol)
+
+# Feedback
+
+I love feedback and I love to hear from you. Just create an issue and tell me what's on your mind.
+
