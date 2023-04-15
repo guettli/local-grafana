@@ -110,6 +110,10 @@ Trying to parse lines like this with eyes is .... (choose your own words here pl
 Additionally, there is one warning "Error while parsing some of the logs". That's because some lines were not json-lines,
 but traditional log lines.
 
+# Alternatives
+
+* [ax](https://github.com/egnyte/ax) command line tool for structured logs.
+
 # Related
 
 * [Thomas WOL: Working out Loud](https://github.com/guettli/wol)
