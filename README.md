@@ -113,6 +113,8 @@ but traditional log lines.
 # Alternatives
 
 * [ax](https://github.com/egnyte/ax) command line tool for structured logs.
+* [visidata](https://github.com/saulpw/visidata) A terminal spreadsheet multitool for discovering and arranging data
+
 
 # Related
 
