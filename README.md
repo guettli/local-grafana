@@ -9,7 +9,7 @@ It is not suited for continuous log handling.
 
 It is based on the docker-compose files of [Loki Docs](https://grafana.com/docs/loki/latest/getting-started/#obtain-the-test-environment).
 
-## Start Grafana, Loki and Promtail
+# Start Grafana, Loki and Promtail
 
 Grafana: Web-GUI for querying the logs.
 
